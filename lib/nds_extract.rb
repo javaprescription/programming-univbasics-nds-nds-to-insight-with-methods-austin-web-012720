@@ -29,7 +29,7 @@ def gross_for_director(director_data)
   total = 0
   inner_index = 0
   while inner_index < director_data.length do
-    coordinate_total += nds[row_index][column_index][inner_index][:price]
+    total += director_data[:movies][inner_index][:worldwide_gross]
     inner_index += 1
   end
   total
