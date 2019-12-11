@@ -6,16 +6,6 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {}
-  nil
-end
-
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
-def gross_for_director(director_data)
-end
-
-def directors_totals(nds)
   total = {} #empty hash to fill with results
   dir_counter = 0 #first counter is looping through the array of directors
   while dir_counter < nds.length do #while dir_counter is < 9,,,
@@ -31,3 +21,10 @@ def directors_totals(nds)
   end
   total #returns all the keys we created with their values.
 end
+
+# Find a way to accumulate the :worldwide_grosses and return that Integer
+# using director_data as input
+def gross_for_director(director_data)
+end
+
+
