@@ -35,4 +35,3 @@ def gross_for_director(director_data)
   end
   coordinate_total
 end
-
