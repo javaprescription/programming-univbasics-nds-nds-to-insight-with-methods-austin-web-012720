@@ -26,4 +26,13 @@ end
 # using director_data as input
 def gross_for_director(director_data)
   binding.pry
+  coordinate_total = 0
+  inner_len = nds[row_index][column_index].length
+  inner_index = 0
+  while inner_index < inner_len do
+    coordinate_total += nds[row_index][column_index][inner_index][:price]
+    inner_index += 1
+  end
+  coordinate_total
 end
+
